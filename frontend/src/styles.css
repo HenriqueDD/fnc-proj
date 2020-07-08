@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #EEE9E9 ;
+    
+}
+
+
+input {
+
+  background-color: #EED5B7;
+  font: 200;
+  font-size: medium;
+  color: black;
+  border-radius: 7px;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  width: 250px;
+  height: 22px;
+
+
+
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  
+}
+
+button {
+  color: black;
+  width: 80px;
+  height: 25px;
+
+}
+
+

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  
+  
+<form img="https://image.slidesharecdn.com/apresentacaofnc-170821133749/95/apresentacao-fnc-it-1-638.jpg?cb=1503322774"action="/action_page.php" target="_blank">
+
+  <img src="https://image.slidesharecdn.com/apresentacaofnc-170821133749/95/apresentacao-fnc-it-1-638.jpg?cb=1503322774" alt="FNCIT" style="width:1340px;height: 710px;">
+
+<h2>Dados do Paciente</h2> <br>
+<label>Nome:</label>
+<input type="text" name="nome" placeholder="Nome Completo">
+<label>E-mail:</label>
+<input type="email" name="email" placeholder="Digite seu e-mail">
+<label>CPF:</label>
+<input type="text" name="CPF" placeholder="Digite seu CPF"> 
+<br>
+
+
+
+<h2>Procedimentos</h2> <br>
+
+<label>Procedimento:</label>
+<input type="text" name="código" placeholder="Ex: 100 - Urina">
+<label>Prazo Máx. Dias</label>
+<input type="number" name="dias" min="1" max="10">
+<button>Adicionar</button>
+
+
+
+<h2>Exame</h2> <br>
+<label>Paciente:</label>
+<input type="text" name="paciente" placeholder="Nome Paciente">
+<label>Procedimentos:</label>
+<input type="text" name="procedimentos" placeholder="Procedimento">
+<label>Coleta</label>
+<input type="date" name="Data Coleta"> 
+<label>Entrega</label>
+<input type="date" name="Data Entrega"> <br>
+<br>
+
+<button>Cadastrar</button>
+
+
+
+
+
+</form>
+
+
+
+    
+
+
+</body>
+</html>
+
+<script>
+  
+  validar = function () {
+    var formulario = document.getElementById("formulario");
+    var cpf = formulario.cpf;
+    var email = formulario.email;
+    var re_cpf = /^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/;
+    var re_email = /^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/;   
+
+    if(re_cpf.test(cpf.value)){
+        alert("CPF válido");}
+        else{
+            alert("CPF inválido");
+    }
+
+    if(re_email.test(email.value)) alert('E-mail válido');
+    else alert('E-mail inválido');
+}
+
+</script>
